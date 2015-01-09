@@ -60,54 +60,54 @@ You may also build it directly using:
 
 The usage of CLINDE/clinde is:
 
-Usage: ./clinde [-?] -data item1 [item2 ...] [-st1 real] [-st2 real]
-[-max.delay int] [-max.n int] [-method str] [-pruning str] [-one.delay]
-[-no.dup]
-
-Description of the options:
-  -?:  Showing the usage.
-
-  -data [REQUIRED]:  File name(s) of the input expression data (tab/space
-    separated), each row is a time point, each column is a gene. Each file
-    should have the same number of columns, but may have different number of
-    rows.
-
-  -st1:  Score threshold for stage 1. For method=pcor, score is -log10(p),
-    where p is the intended p-value. For method=mi, score is the mutual
-    information. Default 2.
-
-  -st2:  Score threshold for stage 2. Similar to st1. Default 2.
-
-  -max.delay:  Maximum delay (lags) to use in the inference, default 4.
-
-  -max.n:  Maximum number of parents to condition on in stage 2, default 4.
-
-  -method:  Method of testing links in stage 1 and 2, can be pcor (partial
-    correlation) or mi (mutual information). Default "pcor"
-
-  -pruning:  Pruning strategy in stage 2, can be all (consider all neighbors
-    of the two vertices when doing conditional test of the link between the
-    two) or common (consider only common neighbors of the two vertices).
-    Default "all"
-
-  -one.delay:  To keep only one delay (the one with best score, smallest
-    delay) for each link after stage 1. Default false.
-
-  -no.dup:  Remove duplicate links. To keep only one delay (the one with best
-    score, smallest delay) for each link after stage 2. Default false.
-
+    Usage: ./clinde [-?] -data item1 [item2 ...] [-st1 real] [-st2 real]
+    [-max.delay int] [-max.n int] [-method str] [-pruning str] [-one.delay]
+    [-no.dup]
+    
+    Description of the options:
+      -?:  Showing the usage.
+    
+      -data [REQUIRED]:  File name(s) of the input expression data (tab/space
+        separated), each row is a time point, each column is a gene. Each file
+        should have the same number of columns, but may have different number of
+        rows.
+    
+      -st1:  Score threshold for stage 1. For method=pcor, score is -log10(p),
+        where p is the intended p-value. For method=mi, score is the mutual
+        information. Default 2.
+    
+      -st2:  Score threshold for stage 2. Similar to st1. Default 2.
+    
+      -max.delay:  Maximum delay (lags) to use in the inference, default 4.
+    
+      -max.n:  Maximum number of parents to condition on in stage 2, default 4.
+    
+      -method:  Method of testing links in stage 1 and 2, can be pcor (partial
+        correlation) or mi (mutual information). Default "pcor"
+    
+      -pruning:  Pruning strategy in stage 2, can be all (consider all neighbors
+        of the two vertices when doing conditional test of the link between the
+        two) or common (consider only common neighbors of the two vertices).
+        Default "all"
+    
+      -one.delay:  To keep only one delay (the one with best score, smallest
+        delay) for each link after stage 1. Default false.
+    
+      -no.dup:  Remove duplicate links. To keep only one delay (the one with best
+        score, smallest delay) for each link after stage 2. Default false.
+    
 
 ==== Example usage:
 
 An example use for inferring initial GRN is:
 
-   CLINDE/clinde -data CLINDE/n500_case_study_nps50a.txt -no.dup > output.txt
+    CLINDE/clinde -data CLINDE/n500_case_study_nps50a.txt -no.dup > output.txt
 
 Now output.txt contains some messages and the GRN after stage 1 and
 stage 2 of CLINDE. To extract the GRN after stage 2 for use in the
 next step, you may use sed and grep, which are available in Linux:
 
-   sed -n '/^==== Stage 2/,/^==== End Stage 2/p' output.txt | grep "^To:" > outgrn.txt
+    sed -n '/^==== Stage 2/,/^==== End Stage 2/p' output.txt | grep "^To:" > outgrn.txt
 
 Now outgrn.txt contains the GRN in a format acceptable for the
 following step.
@@ -134,18 +134,18 @@ Or you may directly build it by:
 
 ==== Usage:
 
-Usage: ./ovc [-?] -f str [-s int]
-
-Description of the options:
-  -?:  Showing the usage.
-
-  -f [REQUIRED]:  File name of the input edges. Each line in the file
-    represents an edge, which consists of a 0-based 'from' index, a 0-based
-    'to' index, and a weight, separated by space..
-
-  -s:  Threshold of component size. If a component is no larger than this, it
-    is not further divided. Default 60.
-
+    Usage: ./ovc [-?] -f str [-s int]
+    
+    Description of the options:
+      -?:  Showing the usage.
+    
+      -f [REQUIRED]:  File name of the input edges. Each line in the file
+        represents an edge, which consists of a 0-based 'from' index, a 0-based
+        'to' index, and a weight, separated by space..
+    
+      -s:  Threshold of component size. If a component is no larger than this, it
+        is not further divided. Default 60.
+    
 ==== Example usage:
 
 An example use for decomposition is (continuing the step 1, and using
@@ -182,9 +182,11 @@ instructions on how to install Python 2.7.
 
 ==== Usage:
 
-Usage: python decomp.py expfile_name pafile_name outfile_name outprefix infer_grn ...
+    Usage: python decomp.py expfile_name pafile_name outfile_name outprefix infer_grn ...
+
 or
-Usage: python decomp.py [ f1 f2 ... ] pafile_name outfile_name outprefix infer_grn ...
+
+    Usage: python decomp.py [ f1 f2 ... ] pafile_name outfile_name outprefix infer_grn ...
 
 where
 
@@ -196,16 +198,11 @@ where
 
     outfile_name is the desired filename of the output final GRN.
 
-    outprefix is the prefix of temporary files in the process of
-inferring the subnetworks.
+    outprefix is the prefix of temporary files in the process of inferring the subnetworks.
 
-    infer_grn is the method for inferring each subnetwork, which can
-be "dd_lasso" for DD-lasso in DD_lasso/, or "clinde" for
-CLINDE/clinde.
+    infer_grn is the method for inferring each subnetwork, which can be "dd_lasso" for DD-lasso in DD_lasso/, or "clinde" for CLINDE/clinde.
 
-    ... means passing any extract parameters to DD-lasso or CLINDE,
-which is mainly used for CLINDE, e.g. to change the score threshold in
-inferring the subnetworks.
+    ... means passing any extract parameters to DD-lasso or CLINDE, which is mainly used for CLINDE, e.g. to change the score threshold in inferring the subnetworks.
 
 Note that decomp.py assumes the presence of CLINDE/clinde if clinde is
 used, and the following R files in DD_lasso if dd_lasso is used:
@@ -242,9 +239,10 @@ where both predicted_grn_file and true_grn_file are in the same format
 as outgrn.txt above.
 
 This program outputs a line of 9 numbers, which are:
-links_recall,links_precision,links_f_measure,
-delay_recall,delay_precision,delay_f_measure,
-effect_recall,effect_precision,effect_f_measure
+
+    links_recall,links_precision,links_f_measure,
+    delay_recall,delay_precision,delay_f_measure,
+    effect_recall,effect_precision,effect_f_measure
 
 where a predicted link is correct iff both the end points and
      direction is correct; delays is correct iff both link is correct
@@ -263,23 +261,23 @@ Or you may build it directly by:
 
 ==== Usage of grn_cmp_hcc:
 
-Usage: ./grn_cmp_hcc [-?] -p str -t str [-n int] [-v]
-
-Description of the options:
-  -?:  Showing the usage.
-
-  -p [REQUIRED]:  File name of the predicted GRN. Each line in the file
-    represents an edge, which consists of a 0-based 'from' index, a 0-based
-    'to' index, a delay, and the effect, separated by space..
-
-  -t [REQUIRED]:  File name of the true GRN. Each line in the file represents
-    an edge, which consists of a 0-based 'from' index, a 0-based 'to' index, a
-    delay, and the effect, separated by space..
-
-  -n:  Number of non-hidden genes, unspecified if <= 0. If an index is >=
-    this, it is regarded as a hidden node. Default 0.
-
-  -v:  Verbose mode.
+    Usage: ./grn_cmp_hcc [-?] -p str -t str [-n int] [-v]
+    
+    Description of the options:
+      -?:  Showing the usage.
+    
+      -p [REQUIRED]:  File name of the predicted GRN. Each line in the file
+        represents an edge, which consists of a 0-based 'from' index, a 0-based
+        'to' index, a delay, and the effect, separated by space..
+    
+      -t [REQUIRED]:  File name of the true GRN. Each line in the file represents
+        an edge, which consists of a 0-based 'from' index, a 0-based 'to' index, a
+        delay, and the effect, separated by space..
+    
+      -n:  Number of non-hidden genes, unspecified if <= 0. If an index is >=
+        this, it is regarded as a hidden node. Default 0.
+    
+      -v:  Verbose mode.
 
 
 The parameter -n can be ignored because there are no hidden genes
