@@ -1,0 +1,15 @@
+###############################################################
+## Specifies the files that should be ignored by git
+## Should be usable for most of my projects.
+
+# Ignore text editor backups
+*~
+
+# Ignore object files, including those by gsc, which has versions
+*.o*
+*.a
+
+# Ignore executables
+*.exe
+
+###############################################################

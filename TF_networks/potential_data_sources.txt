@@ -1,0 +1,61 @@
+http://www.ncbi.nlm.nih.gov/sites/GDSbrowser?acc=GDS4238
+	Bronchial epithelial cell response to influenza virus, viral RNA and interferon-beta
+	downloaded to fLung
+
+http://www.ncbi.nlm.nih.gov/sites/GDSbrowser?acc=GDS3494
+	normal bronchial epithelial cells exposed to cigarette smoke from a typical light flavor brand
+	downloaded to fLung
+
+http://www.ncbi.nlm.nih.gov/sites/GDSbrowser?acc=GDS2940
+	dendritic cells (DCs) at various time points up to 36 hours following treatment with TGF-beta1. DCs derived from CD34+ hematopoietic progenitor cells
+	downloaded to CD34+_Mobilized
+
+http://www.ncbi.nlm.nih.gov/sites/GDSbrowser?acc=GDS2431
+	Analysis of adult differentiating CD34+ hematopoietic progenitor cells
+	downloaded to CD34+_Mobilized
+
+http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE12662
+	Normal human bone marrow CD34+ cells, promyelocytes, and neutrophils and PR9 cell line PML-RARA induction time course
+	downloaded to CD34+_Mobilized
+
+http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE12736
+	human erythroleukemic cells in a time dependent manner after PMA treatment
+
+http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE1036
+	K562 cells
+	downloaded to K562
+
+http://www.ncbi.nlm.nih.gov/sites/GDSbrowser?acc=GDS2104
+	neuroblastoma SK-N-SH cells
+	downloaded to SK-N-SH_RA
+
+http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GPL570
+	probe sets and annotations
+
+http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE14
+	Cancer Genome Anatomy Project SAGE library collection
+	not sure if useful ****
+
+http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE6239
+	human cell lines infected with dengue virus serotype2 NGC
+
+http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE15162
+	Quercetin effect on gene expression in HepG2 hepatocellular cancer cells
+	downloaded at HepG2
+
+http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM378695
+	HepG2 human hepatocellular carcinoma cell line
+
+http://www.ncbi.nlm.nih.gov/sites/GDSbrowser?acc=GDS2626
+	MCF-7 breast cancer cells
+
+http://www.ncbi.nlm.nih.gov/sites/GDSbrowser?acc=GDS1875
+	cell lines expressing wild-type or mutant HIV-1 Vpr protein
+
+http://www.ncbi.nlm.nih.gov/sites/GDSbrowser?acc=GDS1733
+	HSF1-depleted HeLa cells after heat shock
+
+http://www.ncbi.nlm.nih.gov/sites/GDSbrowser?acc=GDS395
+	fetal lung fibroblast cell line IMR-90
+	downloaded to IMR90
+	

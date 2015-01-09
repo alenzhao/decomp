@@ -1,0 +1,185 @@
+
+CD34+_Mobilized/GDS2431_full.soft.gz
+	days 1, 3, 5, 7, 9, 11; mostly 3 replicates
+CD34+_Mobilized/GDS2940_full.soft.gz
+	hours 2, 4, 16, 32; two types; 1 replicate
+CD34+_Mobilized/GSE12662_family.soft.gz
+	seems not time series
+HepG2/GSE15162_family.soft.gz
+	hours 2, 4, 12, 24; two types
+IMR90/GDS395_full.soft.gz
+	hours 1, 2, 4, 8, 12, 24, 48; two types; replicates seem messy
+K562/GSE1036_family.soft.gz
+	??
+SK-N-SH_RA/GDS2104_full.soft.gz
+	hours 4, 8, 16, 24; two replicates each
+fLung/GDS3494_full.soft.gz
+	hours 2, 4, 8, 24; 3 types each; each 4 replicates;
+fLung/GDS4238_full.soft.gz
+	hours 0.25, 0.5, 1, 1.5, 2, 4, 6, 8, 12, 18; at least 6 types ; most with 2 replicates
+
+================================================================
+GDS4238. Some extracted subsets
+
+IFNb
+	rep1
+		0.25h: GSM528681
+		0.5h : GSM528683
+		1h   : GSM528687
+		1.5h : GSM528685
+		2h   : GSM528693
+		4h   : GSM528695
+		6h   : GSM528697
+		8h   : GSM528700
+		12h  : GSM528689
+		18h  : GSM528691
+	rep2
+		0.25h: GSM528682
+		0.5h : GSM528684
+		1h   : GSM528688
+		1.5h : GSM528686
+		2h   : GSM528694
+		4h   : GSM528696
+		6h   : GSM528698
+		8h   : GSM528699
+		12h  : GSM528690
+		18h  : GSM528692
+PR8pre
+	rep1
+		0.25h: GSM528779
+		0.5h : GSM528780
+		1h   : GSM528782
+		1.5h : GSM528781
+		2h   : GSM528785
+		4h   : GSM528786
+		6h   : GSM528787
+		8h   : GSM528788
+		12h  : GSM528783
+		18h  : GSM528784
+PR8post
+	rep1
+		0.25h: GSM528759
+		0.5h : GSM528761
+		1h   : GSM528766
+		1.5h : GSM528763
+		2h   : GSM528771
+		4h   : GSM528773
+		6h   : GSM528775
+		8h   : GSM528777
+		12h  : GSM528767
+		18h  : GSM528769
+	rep2
+		0.25h: GSM528760
+		0.5h : GSM528762
+		1h   : GSM528765
+		1.5h : GSM528764
+		2h   : GSM528772
+		4h   : GSM528774
+		6h   : GSM528776
+		8h   : GSM528778
+		12h  : GSM528768
+		18h  : GSM528770
+delNS1pre
+	rep1
+		0.25h: GSM528671
+		0.5h : GSM528672
+		1h   : GSM528674
+		1.5h : GSM528673
+		2h   : GSM528677
+		4h   : GSM528678
+		6h   : GSM528679
+		8h   : GSM528680
+		12h  : GSM528675
+		18h  : GSM528676
+delNS1post
+	rep1
+		0.25h: GSM528651
+		0.5h : GSM528653
+		1h   : GSM528657
+		1.5h : GSM528655
+		2h   : GSM528663
+		4h   : GSM528665
+		6h   : GSM528667
+		8h   : GSM528669
+		12h  : GSM528659
+		18h  : GSM528661
+	rep2
+		0.25h: GSM528652
+		0.5h : GSM528654
+		1h   : GSM528658
+		1.5h : GSM528656
+		2h   : GSM528664
+		4h   : GSM528666
+		6h   : GSM528668
+		8h   : GSM528670
+		12h  : GSM528660
+		18h  : GSM528662
+vRNA LTX+RNA
+	rep1
+		0.25h: GSM528701
+		0.5h : GSM528703
+		1h   : GSM528707
+		1.5h : GSM528705
+		2h   : GSM528713
+		4h   : GSM528715
+		6h   : GSM528717
+		8h   : GSM528720
+		12h  : GSM528709
+		18h  : GSM528711
+	rep2
+		0.25h: GSM528702
+		0.5h : GSM528704
+		1h   : GSM528708
+		1.5h : GSM528706
+		2h   : GSM528714
+		4h   : GSM528716
+		6h   : GSM528718
+		8h   : GSM528719
+		12h  : GSM528710
+		18h  : GSM528712
+LTX
+	rep1
+		0.25h: GSM528721
+		0.5h : GSM528723
+		1h   : GSM528727
+		1.5h : GSM528725
+		2h   :
+		4h   : GSM528733
+		6h   : GSM528735
+		8h   : GSM528737
+		12h  : GSM528729
+		18h  : GSM528731
+	rep2
+		0.25h: GSM528722
+		0.5h : GSM528724
+		1h   : GSM528728
+		1.5h : GSM528726
+		2h   :
+		4h   : GSM528734
+		6h   : GSM528736
+		8h   : GSM528738
+		12h  : GSM528730
+		18h  : GSM528732
+MockIFN
+	rep1
+		0.25h: GSM528739
+		0.5h : GSM528741
+		1h   : GSM528745
+		1.5h : GSM528743
+		2h   : GSM528751
+		4h   : GSM528753
+		6h   : GSM528756
+		8h   : GSM528757
+		12h  : GSM528747
+		18h  : GSM528749
+	rep2
+		0.25h: GSM528740
+		0.5h : GSM528742
+		1h   : GSM528746
+		1.5h : GSM528744
+		2h   : GSM528752
+		4h   : GSM528754
+		6h   : GSM528755
+		8h   : GSM528758
+		12h  : GSM528748
+		18h  : GSM528750
