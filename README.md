@@ -167,8 +167,7 @@ In order to extract them, you may use grep again:
     grep "^= xpartition" outp.txt > outxpartition.txt
 
 ====================================================================
-Step 3. Infer Subnetworks using either CLINDE or DD-lasso and merge
-into final GRN
+Step 3. Infer Subnetworks using either CLINDE or DD-lasso and merge into final GRN
 ====================================================================
 
 The program to infer each subnetwork and merge them into the final GRN
@@ -299,7 +298,5 @@ very fast.
 
 You may tweak "gen.cases()" to generate cases with other parameters.
 
-====================================================================
-====================================================================
 ====================================================================
 
